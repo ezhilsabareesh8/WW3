@@ -1,0 +1,11 @@
+# 1. Set up model environment
+./w3_setup <WW3_DIR>/model -c tmpl -s access_om3
+
+# 2. Compile and linking
+
+cd WW3/build  #Create build directory if there is no one
+cmake .. -DSWITCH=access_om3 -DCMAKE_INSTALL_PREFIX=install
+make
+make install
+
+
